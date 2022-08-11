@@ -1,0 +1,243 @@
+* {
+   box-sizing: border-box;
+}
+
+html {
+   scroll-behavior: smooth;
+}
+
+body {
+   margin: 0;
+   font-family: 'Noto Sans', sans-serif;
+   scroll-behavior: smooth;
+   color: black;
+}
+
+img   {
+   max-width: 100%;
+}
+
+.container {
+   max-width: 1140px;
+   margin-left: auto;
+   margin-right: auto;
+   padding-right: 15px;
+   padding-left: 15px;
+}
+
+.header {
+   position: relative;
+   width: 100%;
+   height: 100vh;
+   background-size: cover;
+   background-position: center;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+}
+
+.header-title {
+   margin: 0;
+   margin-bottom: 25px;
+   font-weight: 700;
+   font-size: 56px;
+   line-height: 130%;
+   text-align: center;
+   color: aliceblue;
+
+}
+
+.header-subtitle {
+   margin:0;
+   font-weight: 700;
+   font-size: 16px;
+   line-height: 150%;
+   text-align: center;
+   letter-spacing: 0.2em;
+   text-transform: uppercase;
+   color: aliceblue;
+}
+
+.header-arrow {
+   position: absolute;
+   bottom: 30px;
+   left: 50%;
+   transform: translate(-50%, 0);
+   width: 48px;
+   height: 48px;
+}
+
+.portfolio {
+   padding-top: 80px;
+   padding-bottom: 115px;
+}
+
+.portfolio-header {
+   margin: 0;
+   margin-bottom: 70px;
+   font-weight: 700;
+   font-size: 46px;
+   line-height: 130%;
+   text-align: center;
+}
+
+.portfolio-cards-wrapper {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+}
+
+.card {
+   margin-bottom: 30px;
+   max-width: 540px;
+   background-color: white;
+   box-shadow: 0px 10px 40px rgba(126, 155, 189, 0.35); 
+   transition: transform 0.2s ease-in;
+}
+
+.card:hover {
+   transform: translateY(-15px);
+}
+
+.card-link {
+   display: block;
+   padding: 20px;
+   text-decoration: none;
+   transition: color 0.2s ease-in;
+}
+
+.card-link:hover {
+   color: brown;
+}
+
+.card:last-child, .card:nth-last-child(2){
+   margin-bottom: 0;
+}
+
+.card-img {
+   margin-bottom: 20px;
+}
+
+.card-title {
+   margin: 0;
+   margin-bottom: 13px;
+   font-weight: 600;
+   font-size: 24px;
+}
+
+.card p {
+   margin: 0;
+   font-size: 16px;
+   line-height: 130%;
+   display: none;
+}
+
+.footer {
+   padding-top: 45px;
+   padding-bottom: 130px;
+   background-color: black;
+   color: aliceblue;
+}
+
+.footer-row {
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.footer-col {
+   max-width: 350px;
+   flex-grow: 1;
+}
+
+.footer-copyright {
+   color: grey;
+   line-height: 1.3;
+}
+
+.footer-copyright-name {
+   font-weight: 600;
+   font-size: 16px;
+   margin-bottom: 15px;
+}
+
+.footer-copyright p {
+   margin: 0;
+   margin-bottom: 15px;
+   font-style: 16px;
+   font-weight: 600;
+}
+
+.footer-social {
+   line-height: 1.3;
+   color: white;
+}
+
+.footer-social p {
+   margin: 0;
+   margin-bottom: 15px;
+   font-weight: 600;
+   font-style: 16px;
+
+}
+
+.footer-social-row {
+   display: flex;
+   align-items: center;
+}
+
+.footer-social-row > * + * {
+   margin-left: 30px;
+}
+
+.project {
+   padding: 80px 0 120px 0;
+   text-align: center;
+   color: black;
+}
+
+.project-header {
+   margin: 0;
+   margin-bottom: 40px;
+   font-weight: bold;
+   font-style: 46px;
+   line-height: 1.3;
+}
+
+.project-image {
+   margin-bottom: 70px;
+}
+
+.project-description {
+   margin: 0 auto 60px;
+   max-width: 730px;
+}
+
+.project-description p {
+   margin: 0;
+   margin-bottom: 15px;
+   font-style: 16px;
+   line-height: 1.5;
+}
+
+.project-btn-back {
+   display: inline-block;
+   height: 60px;
+   padding-left: 30px;
+   padding-right: 30px;
+   border: 3px solid black;
+   border-radius: 50px;
+   color: black;
+   font-weight: 700;
+   font-style: 16px;
+   line-height: 54px;
+   text-transform: uppercase;
+   text-decoration: none;
+   transition: all 0.2s ease-in;
+}
+
+.project-btn-back:hover {
+   background-color: black;
+   color: white;
+}
